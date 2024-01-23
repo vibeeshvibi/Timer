@@ -1,0 +1,93 @@
+<head>
+  <title>Vibeesh's Timer Table</title>
+  <link rel="icon" type="image/x-icon" href="https://media.licdn.com/dms/image/C5603AQF69hLOV2mRtg/profile-displayphoto-shrink_100_100/0/1662632740888?e=1711584000&v=beta&t=NaLm4khuiV86DZM4yLoMiF-v8XlstLfPHeucvTStn3g">
+</head>
+<body>
+    <div style="display: flex; justify-content: center; margin-top: 4%;">
+      <div>
+      <input type="text" id="title" placeholder="Title">
+      <br><br>
+      <input type="text" id="dis" placeholder="Description">
+      <br><br>
+      <br><br>
+      
+      </div>
+      <div class="timer-div" >
+        <div>
+            <button id='toggle' class="button">Start</button>
+            <span style="display: flex; margin-left: 40%; font-family: Arial ; font-size: larger;">
+                <p id="hr">00</p>
+                <p>:</p>
+                <p id="min">00</p>
+                <p>:</p>
+                <p id='count' class="count">00</p>
+            </span>
+         
+        </div>
+    </div>
+</div>
+<table border="1" id="myTable" style="width: 100%;">
+    <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Duration</th>
+    </tr>   
+   
+  </table>
+
+
+</body>
+<script src="./action.js"></script>
+<style>
+
+    .button{
+        align-items: center;
+        margin-left: 40%;
+        background-color:#04aa6d;
+        color: aliceblue;
+        border: none;
+        border-radius: 2px;
+        height: 30px;
+        width: 70px;
+        cursor: pointer;
+        border-radius: 15px;
+        height: 35px;
+    }
+    .button:hover{
+        background-color: rgb(155, 155, 155);
+    }
+    #myTable{
+        border-collapse: collapse;
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 1px solid white;
+    }
+    th{
+        background:#04aa6d;
+        color: white;
+        height: 40px;
+        padding: 5px;
+        border: 1px solid white;
+
+    }
+    td{
+        background-color: rgb(225, 225, 225);
+        height: 40px;
+        text-align: center;
+        border: 1px solid white;
+    }
+    input{
+    font-size: 16px;
+    margin-left: 20px;
+    border: none;
+    width: 200px;
+    height: 30px;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    }
+
+   
+</style>
